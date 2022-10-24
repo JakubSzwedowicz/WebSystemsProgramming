@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, beers, shop, craft beer, contact, form, email, tenczynek">
+    <meta name="description" content="Professional craft beer shop">
     <title>Contact Page</title>
 </head>
+
 <body>
-    <h1>Contact page...</h1>    
+    <a href="../index.html">Main page</a>
+
+    <h1>Contact us</h1>
+    <div>
+        <h4>Contact form</h4>
+        <hr>
+        <form id="contact_form">
+            <div>
+                <label for="fname">Your first name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Your last name</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Your email address</label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div>
+                <label for="topic">Message topic</label><br>
+                <select id="topic" name="topic">
+                    <optgroup label="Finances">
+                        <option value="returns">Money returns</option>
+                        <option value="invoice">Invoices</option>
+                    </optgroup>
+                    <optgroup label="Complaints">
+                        <option value="create_complaint">Create a complaint</option>
+                        <option value="question_complaint">Question about your complaint</option>
+                    </optgroup>
+                    <optgroup label="Products">
+                        <option value="request">Request for new products</option>
+                        <option value="opinion">Opinion about a product</option>
+                        <option value="question">Question about a product</option>
+                    </optgroup>
+                </select><br>
+            </div>
+            <div>
+                <p>You are a:</p>
+                <label for="person">Private person</label>
+                <input type="radio" id="person" name="customer_type" value="person">
+                <label for="company">Company</label>
+                <input type="radio" id="company" name="customer_type" value="company">
+                <label for="organization">Non-profit organization</label>
+                <input type="radio" id="organization" name="customer_type" value="organization">
+            </div>
+            <div>
+                <p>Previously you have:</p>
+                <input type="checkbox" id="check_ordered" name="check_ordered" value="check_ordered">
+                <label for="check_ordered"> Ordered our products</label><br>
+                <input type="checkbox" id="check_received" name="check_received" value="check_received">
+                <label for="check_received"> Received delivery of our products</label><br>
+                <input type="checkbox" id="check_complaint" name="check_complaint" value="check_complaint">
+                <label for="check_complaint"> Created a complaint</label>
+            </div>
+            <div>
+                <br>
+                <label for="form_content">Message</label><br>
+                <textarea required id="form_content" name="form_content" rows="7" cols="100"
+                    maxlength="200">Write your message here.</textarea>
+            </div>
+            <div>
+                <br><br>
+                <input type="reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div>
+        <hr>
+        <p>Send us an email</p>
+        <a href="mailto:skleppiwny@gmail.com">Send email!</a>
+    </div>
 </body>
+
 </html>
